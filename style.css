@@ -1,0 +1,87 @@
+*{
+  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+   
+}
+
+
+.background{
+    position: relative;
+    display: flex;
+    height: 100vh;
+}
+
+.background::before{
+    content: "";
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+    z-index: -1;
+    background: #000000;
+    opacity: 0.96;
+     
+}
+
+/*Image section */
+img{
+    position: relative;
+    width: 80%;
+    left: 80%;
+    bottom: 20px;
+    cursor: none;
+
+}
+
+/*Word 1*/
+
+.background .Heading > h1{
+    position: relative;
+    color: blanchedalmond;
+    top: 25%;
+    padding: 0 0 0 70px;
+    letter-spacing: 15px;
+    text-align: left;
+    font-size: 52px;
+    border: solid;
+    border-right: 0px;
+    
+}
+
+/*Image words*/
+
+.background .main >h1{
+    position: relative;
+
+    color: white;
+    justify-content: center;
+    top: 20%;
+    right: 400px;
+    font-size: 90px;
+    text-align: right;
+    line-height: 140px;
+    cursor: pointer;
+
+}
+
+/*Main text glow*/
+
+.background .main >h1::before{
+     content: "STEREO TYPE LOOK";
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 0;
+     color: #f25287;
+     overflow: hidden;
+     transition: all 1s linear;
+}
+
+.background .main >h1:hover:before{
+   width: 100%;
+}
+
+
